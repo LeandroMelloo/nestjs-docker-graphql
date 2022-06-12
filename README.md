@@ -66,7 +66,7 @@ mutation {
   }
 }
 
-# Get By ID
+# GetByID
 {
   user (
     id: "15eb724c-c6be-4112-a2d6-67050906697e"
@@ -75,4 +75,24 @@ mutation {
     name
     email
   }
+}
+
+# Update
+mutation {
+  updateUser (
+    id: "82c4188f-f28f-4d6b-8d1e-c4971a38d4ba",
+    data: {
+      name: "Paula da Silva Pereira"
+      email: "paulasilva@union.com"
+    }
+  ){
+    id
+    name
+    email
+  }
+}
+
+# Delete
+mutation {
+  deleteUser(id: "0b32868e-3b41-4f9d-9a8d-1debbf748a8b")
 }
