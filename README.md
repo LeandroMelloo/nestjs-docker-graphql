@@ -96,3 +96,14 @@ mutation {
 mutation {
   deleteUser(id: "0b32868e-3b41-4f9d-9a8d-1debbf748a8b")
 }
+
+# Docker
+etapas: Build -> Ship -> Run
+container: App1(Node) - App2(Mysql) -> Docker -> Sistema Operacional -> Infraestrutura/Hardware
+imagem: Dockerfile -> Docker Image -> Docker Container
+
+# Criando uma imagem Docker
+docker build -t nest_api .
+
+# Rodando um container docker
+docker run nest_api
